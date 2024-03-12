@@ -22,7 +22,7 @@ const CommentBox = () => {
       </div>
 
        <div className="col-span-2">
-       <button className="px-4 md:px-7 py-1.5 md:py-3 bg-[#5358b6] text-[#dce5f8] inline-block rounded-md font-semibold transition duration-300 hover:duration-500 hover:scale-105"  >SEND</button>
+       <button className="px-4 md:px-7 py-1.5 md:py-3 bg-[#5358b6] text-[#dce5f8] inline-block rounded-md font-semibold">SEND</button>
        </div>
       </div>
     </div>
@@ -30,3 +30,5 @@ const CommentBox = () => {
 };
 
 export default CommentBox;
+
+// transition duration-300 hover:duration-500 hover:scale-105
