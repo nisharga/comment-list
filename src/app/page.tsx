@@ -1,10 +1,11 @@
-import Image from "next/image";
+import CommentBox from "@/Components/CommentBox";
 
 export default function Home() {
   return (
-    <>
-   <div className="bg-red-500">Hello World</div>
-   <div className="bg-blue-500">Hello World</div>
-   </>
+     <div className="bg-[#f5f6fa] h-screen w-screen">
+      <div className="container">
+        <CommentBox />
+      </div>
+    </div>
   );
 }
