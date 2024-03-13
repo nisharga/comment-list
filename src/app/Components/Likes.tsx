@@ -1,3 +1,4 @@
+import { Plus } from "lucide-react";
 import { FC } from "react";
 
 interface IProps {
@@ -5,7 +6,11 @@ interface IProps {
 }
 
 const Likes: FC<IProps> = ({ totalLike }) => {
-  return <div>Likes total: {totalLike}</div>;
+  return (
+    <div>
+      <Plus color={`text-[#00ff00]`} size={18} /> {totalLike}
+    </div>
+  );
 };
 
 export default Likes;
