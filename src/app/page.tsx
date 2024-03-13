@@ -1,10 +1,14 @@
 import Avater from "@/ReusableComponents/Avater";
 import InputField from "@/ReusableComponents/InputField";
+import CommentList from './../Components/CommentList';
 
 export default function Home() {
   return (
     <div className="bg-[#f5f6fa] h-screen w-screen">
       <div className="container">
+        {/* comment list */}
+        <CommentList/>
+        {/* comment list */}
         <div className="bg-white max-w-[730px] h-[140px] rounded-md p-6 mx-auto flex items-center justify-center">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-2 md:col-span-1">
