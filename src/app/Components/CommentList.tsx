@@ -3,9 +3,8 @@ import Likes from './Likes'
 
 const CommentList = () => {
   return (
-    <div className=''>
-      Like: <Likes totalLike={10} />
-      
+    <div className='bg-white p-4'>
+      Like: <Likes totalLike={10} /> 
     </div>
   )
 }
