@@ -4,12 +4,12 @@ import CommentList from './Components/CommentList';
 
 export default function Home() {
   return (
-    <div className="bg-[#f5f6fa] h-screen w-screen">
-      <div className="container">
+    <div className="bg-[#f5f6fa] h-full w-full p-2">
+      <div className="container mx-auto">
         {/* comment list */}
         <CommentList/>
         {/* comment list */}
-        <div className="bg-white max-w-[730px] h-[140px] rounded-md p-6 mx-auto flex items-center justify-center">
+        <div className="bg-white max-w-[730px] rounded-md p-6 mx-auto flex items-center justify-center mt-4">
           <div className="grid grid-cols-12 gap-5">
             <div className="col-span-2 md:col-span-1">
               <Avater

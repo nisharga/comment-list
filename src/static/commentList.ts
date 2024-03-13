@@ -22,6 +22,7 @@ export const CommentListData = [
                 time: "1 week ago",
                 comment: "If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.",
                 likes: 4,
+                mention: "@maxblagun"
             },
             {
                 id: "r2",
@@ -30,6 +31,7 @@ export const CommentListData = [
                 time: "2 days ago",
                 comment: "I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/ framework. But the fundamentals are what stay constant.",
                 likes: 4,
+                mention: "@ramsesmiran"
             }
         ]
     }

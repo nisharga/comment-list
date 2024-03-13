@@ -16,6 +16,29 @@
   }
 }
 
+.after_image_line {
+  position: relative;
+}
+/* .after_image_line::after { */
+  /* position: absolute; */
+  /* left: -20px;  */
+  /* width: 1px; */
+  /* height: 100%; */
+  /* content: ''; */
+  /* background: #eaebef; */
+/* } */
+
+@media only screen and (min-width: 600px) {
+  .after_image_line::after {
+    position: absolute;
+    left: -20px; 
+    width: 1px;
+    height: 103%;
+    content: '';
+    background: #eaebef;
+  }
+}
+
 /* body { */
   /* color: rgb(var(--foreground-rgb)); */
   /* background: linear-gradient( */

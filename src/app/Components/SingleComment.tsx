@@ -1,22 +1,52 @@
-import Avater from "@/ReusableComponents/Avater"
-import Likes from "./Likes" 
-
+import Avater from "@/ReusableComponents/Avater";
+import Likes from "./Likes";
 import Info from "./Info";
+import { FC } from "react";
+import { Replies } from ".";
 
-const SingleComment = () => {
-  return (
-    <div className="bg-white max-w-[730px] h-[140px] rounded-md p-6 mx-auto flex items-center justify-center mb-4">
-        <Likes totalLike={10} />
-        <div className="ml-6">
-            <Info 
-                imgURL="https://i.ibb.co/yV6fBfD/Screenshot-6.png"
-                name="Nisharga"
-                date="2 week ago"
-            />
-            <p className="pr-4 text-[#81848b] text-sm pt-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum omnis, eligendi saepe perspiciatis nisi illum totam natus molestias quidem, esse vero, incidunt asperiores. Nostrum quasi delectus ipsa, dolorum eius similique.</p>
-        </div>
-    </div>
-  )
+interface IComment {
+  id: any;
+  img: any;
+  name: any;
+  time: any;
+  comment: any;
+  likes: any;
+  replies?: {
+        id: string;
+        img: string;
+        name: string;
+        time: string;
+        comment: string;
+        likes: number;
+        mention?: string;
+    }[] 
 }
 
-export default SingleComment
+interface IProps {
+  comment: IComment;
+}
+
+const SingleComment: FC<IProps> = ({ comment }) => {
+  return (
+    <>
+    <div className="bg-white max-w-[730px] rounded-md p-6 mx-auto flex items-center justify-center mb-4">
+      <Likes totalLike={comment?.likes} />
+      <div className="ml-6">
+        <Info
+          imgURL={comment?.img}
+          name={comment?.name}
+          date={comment?.time}
+        />
+        <p className="pr-4 text-[#81848b] text-sm pt-1">{comment?.comment}</p>
+      </div>
+    </div> 
+    
+      {
+        (comment.replies ?? []).map(replies => <Replies key={replies.id} replies={replies} 
+           /> )
+      } 
+    </>
+  );
+};
+
+export default SingleComment;
