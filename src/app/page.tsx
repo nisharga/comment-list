@@ -1,6 +1,6 @@
 import Avater from "@/ReusableComponents/Avater";
 import InputField from "@/ReusableComponents/InputField";
-import CommentList from './../Components/CommentList';
+import CommentList from './Components/CommentList';
 
 export default function Home() {
   return (
