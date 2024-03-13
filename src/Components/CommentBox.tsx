@@ -5,7 +5,7 @@ import Avater from "@/ReusableComponents/Avater";
 
 const CommentBox = () => {
   return ( 
-    <div className="bg-red-500 max-w-[730px] h-[140px] rounded-md p-6 mx-auto flex items-center justify-center">
+    <div className="bg-white max-w-[730px] h-[140px] rounded-md p-6 mx-auto flex items-center justify-center">
       <div className="grid grid-cols-12 gap-5">
       <div className="col-span-2 md:col-span-1">
         <Avater
